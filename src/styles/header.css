@@ -1,0 +1,25 @@
+/* *{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+
+.nav-items > li{
+    padding : 10px;
+}
