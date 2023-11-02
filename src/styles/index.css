@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'brandsRegular';
+    src: url('../fonts/brandsRegular.ttf');
+}
+
+@font-face {
+    font-family: 'flamaBook';
+    src: url('../fonts/flama_book.otf');
+}
+
+@font-face {
+    font-family: 'flamaMedium';
+    src: url('../fonts/flama_medium.otf');
+}

@@ -7,15 +7,13 @@ export function Header() {
     return (
         <header>
             <nav className = 'nav'>
+                {/* set the primary_logo to a higher resolution and bigger size */}
                 <img src={primary_logo} alt="logo" className="nav-logo"/>
                 <ul className="nav-items">
-                    {/* <a href = '#'>Home</a>
-                    <a href = '#'>About</a>
-                    <a href = '#'>Contact</a> */}
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li>THE BLENDS</li>
+                    <li>OUR STORY</li>
                 </ul>
+                <p className="nav-shop">SHOP</p>
             </nav>
         </header>
     )

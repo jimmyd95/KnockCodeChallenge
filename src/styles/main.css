@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    font-family: 'brandsRegular', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+.theEntireBody{
+    /* center everything */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+}
