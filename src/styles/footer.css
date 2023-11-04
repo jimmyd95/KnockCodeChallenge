@@ -1,36 +1,34 @@
-*{
-    box-sizing: border-box;
-    font-family: 'brandsRegular', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    background-color: black;
-}
-
-.footer{
+.footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     border-top: 2px solid white;
     padding: 65px;
+    padding-bottom: 20px; /* reduces the amount of space between the bottom of the footer and the bottom of the page */
 }
 
-.footer-left {
+.footer button{
+    border: none;
+}
+
+/* button on hover text turns gray */
+.footer button:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top-left {
+    margin: 58px 0px 293px; /* top right bottom left */
+}
+
+.footer-top-mid {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.footer-left > p{
-    font-size: 40px;
-    width: 60%;
-    word-wrap: break-word;
-}
-
-.footer-mid {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: -50px;
 }
 
 input[type="text"] {
@@ -42,23 +40,55 @@ input[type="text"] {
     width: 18em;
 }
 
+.footer-email{
+    border: none;
+    border-bottom: 2px solid white;
+}
+
 .footer-submit{
+    font-size: 1.2em;
+    background: none;
+    margin: 1.5em 0 0.1em 3em; /* top right bottom left */
     transform: rotate(-45deg);
 }
 
-.footer-email{
-    border-bottom: 1px solid white;
+.footer-top-mid{
+    align-items: flex-start;
+    margin: 58px 0px;
 }
 
-.footer button{
-    background: none;
-    border: none;
-    outline: inherit;
+.footer-top-mid button{
     margin: 14px 0px;
-    margin-top: 40px;
 }
 
-.footer button:hover{
-    color: #757575;
+.footer-top-right {
+    background: none;
+    margin-top: 71px;
 }
 
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6em 0px;
+}
+
+.footer-bottom-left > span{
+    font-weight: lighter;
+}
+
+.footer-bottom-left > span, .footer-bottom-left button{
+    font-size: 0.6em;
+    margin: 0.5em 0.8em;
+}
+
+.footer-bottom-left, .footer-bottom-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-bottom-right button {
+    margin-left: 20px;
+}

@@ -14,3 +14,45 @@
     align-items: center;
     padding: 1.5em;
 }
+
+.intro {
+    position: relative;
+    width: 85%;
+    margin: auto;
+}
+
+.intro img {
+    width: 100%;
+}
+
+.intro-image-text {
+    background: none;
+    position: absolute;
+    bottom: -20%;
+    left: -0.8em;
+    white-space: normal;
+    width: 60%;
+    font-size: 4.6vw;
+    letter-spacing: 0.16em;
+}
+
+.text-filler{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 75%;
+    margin-top: 12vw;
+    margin-bottom: 168px;
+}
+
+.text-filler span{
+    font-size: 3vw;
+    font-weight: normal;
+    margin: 16px 0;
+}
+
+.text-filler-author{
+    font-size: 2px;
+    font-weight: bolder;
+}

@@ -1,0 +1,14 @@
+.card-deck {
+    display: flex;
+    background: white;
+}
+
+.card {
+    flex: 1;
+    transition: flex 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card.expanded {
+    flex: 5;
+}
