@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import '../styles/footer.css'
 import secondary from "../images/logos/Secondary_Logo.svg";
-import { FaYoutube, FaTwitter, FaFacebook, FaCoffee, FaArrowRight} from 'react-icons/fa';
+import { FaYoutube, FaTwitter, FaFacebook, FaArrowRight} from 'react-icons/fa';
 
 // I like function better because it looks like... well a function
 export function Footer() {

@@ -1,14 +1,224 @@
+@font-face {
+    font-family: 'flama_medium';
+    src: url('../fonts/flama_medium.otf') format('opentype');
+}
+
+.collapseCard{
+    font-family: 'flama_medium', 'flama_book', san-serif;
+    background-color: white;
+    border: 10vw solid white;
+}
+
+.collapseCard-title span{
+    font-family: 'flama_book';
+    display: block;
+    width: 100vw;
+    color: black;
+    background-color: white;
+    font-size: 6vw;
+    margin: 0 0 4vh 0;
+    padding-left: 9%;
+}
+
 .card-deck {
     display: flex;
-    background: white;
+    width: 100vw;
+    height: 130vh;
 }
 
 .card {
     flex: 1;
+    background: white;
     transition: flex 0.3s ease-in-out;
+    position: relative;
+    overflow: auto;
+}
+
+.card:not(.expanded){
+    background: rgba(230, 230, 230);
     cursor: pointer;
 }
 
-.card.expanded {
-    flex: 5;
+.card:not(.expanded) .vertical-text{
+    opacity: 1;
+    color: black;
+}
+
+.vertical-text, .column1 {
+    background-color: transparent;
+}
+
+.card .vertical-text{
+    /* color: black; */
+    writing-mode: vertical-rl;
+    text-align: center;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 1vw;
+    padding-top: 1vw;
+}
+
+.card.expanded{
+    flex: 1.4;
+}
+
+.card.expanded .vertical-text{
+    opacity: 0;
+}
+
+.card .columns{
+    position: absolute;
+    left: 3.5vw;
+    bottom: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 4%;
+    background-color: black;
+    overflow: auto;
+}
+
+.column1{
+    background-color: transparent;
+}
+
+.column1 h1{
+    padding: 0 0 0 2vw;
+    font-size: 2vw;
+    margin-top: 2vw;
+    background-color: transparent;
+}
+
+.column1 h2{
+    font-family: 'flama_book';
+    font-weight: lighter;
+    padding: 0 0 0 2vw;
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+    background-color: transparent;
+}
+
+.column2{
+    font-family: 'flama_medium';
+    background-color: yellow; /* this is for the entire back */
+    border-bottom-left-radius: 3%;
+}
+
+.column2 .row{
+    background-color: yellow; /* and this makes the items' background, weirdly enough it doesn't just do it in column2... */
+    display: flex;
+    justify-content: left;
+    margin: 1vw;
+}
+
+.column2 .row .item{
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+}
+
+.column2 .row .item img{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    margin-right: -1.4vw;
+    margin-left: 0.5vw;
+}
+
+.column2 .row .item p{
+    font-size: 0.7vw;
+    margin: 0;
+    padding-left: 2vw;
+}
+
+.column2 p{
+    color: black;
+    background-color: transparent;
+    font-size: 0.8vw;
+    margin: 1.4vw 0 1.5vw 2vw;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .card{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card .vertical-text {
+        writing-mode: horizontal-tb;
+        border-bottom: 2px solid black;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        margin-top: -1vw;
+        padding: 2vw 0 2vw 9vw;
+        background-color: rgba(230, 230, 230);
+    }
+
+    .card-deck{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card.expanded{
+        flex: 3;
+        padding-top: 60vh;
+    }
+    
+    .columns{
+        border-radius: 3%;
+        margin-left: 7vw;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .column1 h1, .column1 h2{
+        position: absolute;
+        left: 5vw;
+        top: 3vh;
+    }
+    
+    .column1 h1{
+        font-family: 'flama_medium';
+        font-weight: lighter;
+        font-size: 6vw;
+    }
+
+    .column1 h2{
+        font-family: 'flama_book';
+        font-size: 4vw;
+        margin-top: 6vh;
+    }
+
+    .column2 .row .item{
+        padding: 0 2vw 0 2vw;
+        margin: 1vh 0 2vh 2vw;
+    }
+
+    .column2 .row .item img{
+        width: 5vw;
+        height: 5vh;
+        margin-right: -6vw;
+        margin-bottom: 2vh;
+    }
+    
+    .column2 .row .item p{
+        font-size: 3vw;
+        margin: 5% 0 20% 5vw;
+    }
+    
+    .column2 p{
+        font-family: 'flama_book';
+        font-size: 3vw;
+        margin: -2vh 0 2vh 6vw;
+        width: 80%;
+    }
+
 }

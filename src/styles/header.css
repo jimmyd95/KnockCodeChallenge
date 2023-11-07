@@ -43,3 +43,87 @@ body{
     border-radius: 40% / 80%;
     padding: 15px 30px;
 }
+
+.nav-items button{
+    font-size: 2vw;
+    font-weight: lighter;
+    border: none;
+    margin-left: 2vw;
+}
+
+.nav-items button:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.nav-shop:hover {
+    color: gray;
+    border-color: gray;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-button {
+        display: block;
+        border: none;
+    }
+
+    .menu-button button:hover {
+        color: gray;
+        cursor: pointer;
+    }
+    
+    .menu-button:hover {
+        color: gray;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        position: fixed;
+        top: 10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto; /* Add a scrollbar if the content overflows */
+        z-index: 1; /* Make sure the dropdown menu appears on top of other elements */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 12vw;
+        padding-top: 30vw; /* this is so the padding of the items have a bit of space from the top */
+        margin-top: 2vw; /* this is to adjust the top bits so it covers the images behind */
+    }
+
+    .dropdown-menu button{
+        font-size: 10vw;
+        font-weight: lighter;
+        border: none;
+        margin-bottom: 15vw;
+    }
+
+    .dropdown-menu-shop{
+        font-size: 4vw;
+        color: #CE6B2E;
+        /* The circle around the shop icon */
+        border: 4px solid #CE6B2E;
+        border-radius: 40% / 80%;
+        padding: 30px 70px;
+    }
+
+    .dropdown-menu button:hover {
+        color: gray;
+        cursor: pointer;
+    }
+    
+    .dropdown-menu-shop:hover {
+        color: gray;
+        border-color: gray;
+        cursor: pointer;
+    }
+}

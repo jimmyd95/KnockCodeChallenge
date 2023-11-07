@@ -26,6 +26,9 @@ export function Carousel() {
 
     return (
         <div className="carousel">
+            <div className="carousel-title">
+                <span>PRODUCED WITH EXCELLENCE</span>
+            </div>
             <div className="carousel-images">
                 {images.map((image, index) => (
                     <img key={index} src={image} alt="" 
@@ -49,8 +52,8 @@ export function Carousel() {
                     </p>
                 </div>
                 
-                    <button className="carousel-button" onClick={prevSlide}>&#8592;</button>
-                    <button className="carousel-button" onClick={nextSlide}>&#8594;</button>
+                <button className="carousel-button" onClick={prevSlide}>&#8592;</button>
+                <button className="carousel-button" onClick={nextSlide}>&#8594;</button>
             </div>
         </div>
     )

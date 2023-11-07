@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'flama_book';
+    src: url('../fonts/flama_book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'flama_medium';
+    src: url('../fonts/flama_medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'flama_medium';
+    src: url('../fonts/brandsRegular.ttf') format('opentype');
+}
+
+.intro{
+    background: none;
+}
+
+.title{
+    display: flex;
+    background: none;
+    position: relative;
+    justify-content: center;
+}
+
+.title img{
+    width: 80vw;
+    display: block;
+    position: relative;
+}
+
+.title-image-text {
+    font-weight: lighter;
+    font-size: 6vw;
+    width: 50%;
+    position: absolute;
+    left: 4.25%;
+    bottom: -27%;
+    text-align: left;
+    background-color: transparent;
+}
+
+.filler{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background: none;
+    margin: 14vw 4vw 15vw 4vw;
+    padding: 0vw 7vw 0 7vw;
+}
+
+.filler span{
+    width: 80%;
+    margin-top: 3vw;
+    margin-left: 4vw;
+    font-size: 2vw;
+    font-weight: lighter;
+    line-height: 2.5vw;
+}
+
+.filler-author{
+    font-size: 1.4vw !important;
+    font-family: "flama_medium";
+}
+
+.filler-author-title {
+    font-size: 1.4vw !important;
+    font-family: "flama_book";
+    margin-left: 0.5vw !important;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .title{
+        margin-bottom: 40vw !important;
+    }
+
+    .title-image-text {
+        bottom: -52%;
+        left: 30%;
+    }
+
+    .filler, .filler span{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .filler span{
+        font-family: 'flama_book';
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .filler-author{
+        font-family: 'flama_medium' !important;
+        font-size: 3vw !important;
+    }
+
+    .filler-author-title{
+        font-size: 3vw !important;
+    }
+
+}
