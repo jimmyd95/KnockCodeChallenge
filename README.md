@@ -7,7 +7,7 @@ Both PC and mobile versions of the webpage:
 ![Screenshot 2023-11-07 121512](https://github.com/jimmyd95/KnockCodeChallenge/assets/16414366/e94d4bb4-9ae2-45db-9247-7e649dcdf23c)
 
 <p align="center">
-  <img width="200" src="https://github.com/jimmyd95/KnockCodeChallenge/assets/16414366/9b56e3f0-28d4-41fd-a193-d6cdde13c684" alt="HONOUR MOBILE">
+  <img src="https://github.com/jimmyd95/KnockCodeChallenge/assets/16414366/9b56e3f0-28d4-41fd-a193-d6cdde13c684" alt="HONOUR MOBILE">
 </p>
 
 ~Finished on 2023-11-07, four days of work, made me realize how much I hate CSS again...~
