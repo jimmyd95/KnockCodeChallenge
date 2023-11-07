@@ -6,7 +6,8 @@
 .collapseCard{
     font-family: 'flama_medium', 'flama_book', san-serif;
     background-color: white;
-    border: 6vh solid white;
+    border-top: 6vh solid white;
+    border-bottom: 6vh solid white;
     padding-bottom: 5vw;
 }
 
@@ -76,8 +77,8 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 4%;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 1vw;
     background-color: black;
     overflow: auto;
 }
@@ -106,7 +107,6 @@
 .column2{
     font-family: 'flama_medium';
     background-color: yellow; /* this is for the entire back */
-    border-bottom-left-radius: 3%;
 }
 
 .column2 .row{
@@ -154,48 +154,57 @@
 
     .card .vertical-text {
         writing-mode: horizontal-tb;
-        border-bottom: 2px solid black;
+        border-bottom: 3px solid black;
         width: 100%;
-        height: 100%;
+        height: 9vh;
         text-align: left;
-        margin-top: -1vw;
-        padding: 2vw 0 2vw 9vw;
-        background-color: rgba(230, 230, 230);
+        margin-top: -3.2vw;
+        padding: 4vw 0 0vw 9vw;
+        background-color: rgba(230, 230, 230, 0.5);
     }
 
     .card-deck{
         display: flex;
         flex-direction: column;
     }
+
+    .card:not(.expanded){
+        background-color: rgba(230, 230, 230, 0.9);
+    }
     
     .card.expanded{
-        flex: 3;
-        padding-top: 60vh;
+        flex: 1.5;
+        padding-top: 65vh;
     }
     
     .columns{
-        border-radius: 3%;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
         margin-left: 7vw;
         width: 80vw;
-        height: 30vh;
+        height: 45vh;
     }
 
     .column1 h1, .column1 h2{
-        position: absolute;
-        left: 5vw;
-        top: 3vh;
+        flex: 1;
+        margin: 6vh 0 4vh 4vw;
     }
     
     .column1 h1{
         font-family: 'flama_medium';
-        font-weight: lighter;
         font-size: 6vw;
+        /* margin-top: 2vh; */
     }
 
     .column1 h2{
         font-family: 'flama_book';
         font-size: 4vw;
-        margin-top: 6vh;
+        margin-top: -2vh;
+    }
+
+    .column2{
+        flex: 1.6;
+        margin-top: 3vh;
     }
 
     .column2 .row .item{

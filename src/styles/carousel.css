@@ -62,7 +62,7 @@
     border: none;
     background: none;
     font-size: 2em;
-    margin-top: 4vw;
+    margin-top: 0.2vh;
     margin-left: -2vw;
     padding-right: 3vw;
     transform: scale3d(0.8, 1.4, 1);
@@ -96,7 +96,7 @@
     margin: 2vw 0;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
     .carousel{
         display: flex;
         flex-direction: column;

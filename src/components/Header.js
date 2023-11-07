@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../styles/header.css'
 import primary_logo from "../images/logos/HONOUR_PRIMARY_logo.svg";
 
 // I like function better because it looks like... well a function
 export function Header() {
 
-    const isMobile = window.innerWidth <= 1000;
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Clean up the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isMobile) {
+            setIsMenuOpen(false);
+        }
+    }, [isMobile]);
 
     return (
         <header>
