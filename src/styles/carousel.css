@@ -19,14 +19,14 @@
 
 .carousel-title {
     font-family: 'flama_medium';
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-    margin-left: 4%;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    margin-left: 2vw;
     align-self: flex-start;
 }
 
 .carousel-title span {
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: lighter;
     margin: 20px 0;
 }

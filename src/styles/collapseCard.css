@@ -6,7 +6,8 @@
 .collapseCard{
     font-family: 'flama_medium', 'flama_book', san-serif;
     background-color: white;
-    border: 10vw solid white;
+    border: 6vh solid white;
+    padding-bottom: 5vw;
 }
 
 .collapseCard-title span{
@@ -16,8 +17,8 @@
     color: black;
     background-color: white;
     font-size: 6vw;
-    margin: 0 0 4vh 0;
-    padding-left: 9%;
+    margin: 0 0 6vh 0;
+    padding-left: 7vw;
 }
 
 .card-deck {
@@ -55,8 +56,8 @@
     opacity: 0.5;
     transition: all 0.3s ease;
     position: absolute;
-    top: 1vw;
-    padding-top: 1vw;
+    top: 2vh;
+    left: 1.5vw;
 }
 
 .card.expanded{
